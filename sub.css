@@ -43,10 +43,9 @@ header {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 100;
     padding: 1rem 2rem;
     background-color: white;
-    border: 1px solid red;
   }
   
   header nav {
@@ -104,9 +103,30 @@ header {
     color: white;
   }
 
+  .sec1_txt h2 {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .sec1_txt h2::before {
+    content: "";
+    width: 10%;
+    height: 4px;
+    position: absolute;
+    background-color: #fff;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sec1_txt p {
+    line-height: 1.5;
+    font-weight: 200;
+  }
+
 
   .pg_con {
-    border: 1px solid slateblue;
     padding: 2rem 0;
     position: relative;
   }
@@ -154,7 +174,6 @@ header {
   }
 
   .sec2 .pg li {
-    border: 1px solid red;
     width: calc(100% / 3);
     text-align: center;
     color: grey;
@@ -200,7 +219,26 @@ header {
   }
 
   .sec4 .sec4_info {
-    width: 25%;
+    width: 30%;
+    line-height: 1.2;
+  }
+
+  .sec4_info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .sec4_info li strong {
+    background-color: #98baa2;
+    padding: 0.3rem 0.5rem;
+    border-radius: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .sec4 h2 {
+    width: 30%;
+    margin-bottom: 0.5rem;
   }
 
   /* checkbox */
@@ -213,12 +251,38 @@ header {
     width: 50%;
   }
 
-  .fot_checkbox.e {
-    flex-direction: column;
+  .fot_checkbox.b,
+  .fot_checkbox.c,
+  .fot_checkbox.d {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid gray;
   }
 
-  .fot_checkbox.e .fot_e {
+  .fot_checkbox.b {
+    border-top: 3px solid #1d7624;
+  }
+
+  .fot_checkbox.b>div {
+    width: 50%
+  }
+
+  .fot_checkbox.e {
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid gray;
+  }
+
+  .fot_checkbox.e>p {
+    padding-top: 0.5rem;
+    margin-left: 1.8rem;
+    font-size: 0.7rem;
+  }
+
+  .fot_checkbox.e .checkbox {
     flex-direction: row;
+    text-align: right;
   }
 
   .fot_checkbox input[type="radio"] {
@@ -321,9 +385,70 @@ header {
     justify-content: flex-start;
     padding: 2rem 0;
     width: 100%;
+    border-bottom: 1px solid gray;
   }
 
   .form_tel input[type="tel"]{
-    width: 4vw;
-    border: 1px solid red;
+    width: 8vw;
+    height: 2rem;
+  }
+  
+  .form_date input[type="date"]{
+    width: 15vw;
+    height: 2rem;
+  }
+
+  .form_name input[type="text"]{
+    width: 15vw;
+    height: 2rem;
+  }
+
+  .form_add input[type="search"]{
+    width: 10vw;
+    height: 2rem;
+  }
+
+  .form_add button {
+    width: 5vw;
+    height: 2rem;
+    background-color: #333;
+    color: white;
+  }
+
+  .form_date>div p {
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+  }
+
+  .sec4_info h2 {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .info_1,
+  .info_2 {
+    border-radius: 20px;
+    background-color: #e8eae7;
+    padding: 1.5rem;
+    color: rgb(92, 92, 92);
+    font-weight: 300;
+  }
+
+  .info_1 {
+    margin-bottom: 1rem;
+  }
+
+  .sub_button {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 3rem;
+  }
+
+  .sub_button button {
+    border: 1px solid #333;
+    background-color: transparent;
+    width: 10vw;
+    height: 2vw;
+    cursor: pointer;
   }

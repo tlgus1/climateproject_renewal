@@ -79,11 +79,11 @@
                     </div>
                 </form>
                 <form class="form_date">
+                    <h2>생년월일</h2>
                     <div>
-                        <h2>생년월일</h2>
+                        <input type="date">
                         <p>*주민등록 상의 생년월일을 입력해주세요.</p>
                     </div>
-                    <input type="date">
                 </form>
                 <form class="form_tel">
                     <h2>연락처</h2>
@@ -112,38 +112,40 @@
                     <input type="radio" name="select" id="check5_1">
                     <label for="check5_1"><span>기후프로젝트 소식 및 후원안내를 위한 개인정보 수집 및 이용 동의(선택)</span></label>
                     <p>개인정보 수신 동의여부와 상관없이 회원가입이 가능하며, 공지사항·후원 관련 정보성 안내는 동의 여부와 관계없이 발송됩니다.</p>
-                    <form class="fot_e">
-                        <input type="radio" name="select" id="check6_1" disabled>
-                        <label for="check6_1"><span>SNS</span></label>
-                        <input type="radio" name="select" id="check6_2" disabled>
-                        <label for="check6_2"><span>이메일</span></label>
-                        <input type="radio" name="select"id="check6_3" disabled>
-                        <label for="check6_3"><span>우편물</span></label>
-                    </form>
+                    <div class="checkbox">
+                        <form class="fot_e">
+                            <input type="radio" name="select" id="check6_1" disabled>
+                            <label for="check6_1"><span>SNS</span></label>
+                            <input type="radio" name="select" id="check6_2" disabled>
+                            <label for="check6_2"><span>이메일</span></label>
+                            <input type="radio" name="select"id="check6_3" disabled>
+                            <label for="check6_3"><span>우편물</span></label>
+                        </form>
+                    </div>
                 </form>
             </div>
             <div class="sec4_info">
-                <div>
-                    <h2>■ 후원자님의 기부선택 내역</h2>
+                <h2>■ 후원자님의 기부선택 내역</h2>
+                <div class="info_1">
                     <ul>
-                        후원자님은
+                        <li>후원자님은</li>
                         <li>
-                            <p>후원방식</p>
+                            <strong>후원방식</strong>
                             <p>정기후원</p>
                         </li>
                         <li>
-                            <p>후원금액</p>
+                            <strong>후원금액</strong>
                             <p>20.000</p>
                         </li>
                         <li>
-                            <p>회원유형</p>
+                            <strong>회원유형</strong>
                             <p>개인</p>
                         </li>
                     </ul>
                     <p>선택하셨습니다</p>
                 </div>
-                <div>
-                    <h2>■ 후원 궁금한 사항</h2>
+                <h2>■ 후원 궁금한 사항</h2>
+                <div class="info_2">
                     <ul>
                         <li>후원에 대해 궁금한 사항은 홈페이지 온라인 상담 또는 상담센터(02-336-0912)로 연락바랍니다.</li>
                         <li>회원이신 분들은 로그인 후 이용하시면 더욱 쉽게 후원할 수 있습니다.</li>
@@ -153,8 +155,10 @@
                 </div>
             </div>
         </section>
-        <button>이전 단계로</button>
-        <button>다음 단계로</button>
+        <div class="sub_button">
+            <button>이전 단계로</button>
+            <button>다음 단계로</button>
+        </div>
     </div>
 </body>
 </html>
