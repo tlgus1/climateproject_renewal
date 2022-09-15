@@ -650,7 +650,7 @@ header nav a {
 
 .swiper-slide.sld3 img {
   display: block;
-  width: 60%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -719,7 +719,7 @@ header nav a {
 }
 
 .sec4_txt {
-  width: 100%;
+  width: 60%;
   text-align: left;
   padding: 1rem;
   position: relative;
@@ -985,11 +985,32 @@ header nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .fot_checkbox {
- padding-right: 1rem;
+  display: flex;
 }
+
+.checkbox1 {
+  background-color: #333333;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox2 {
+  background-color: white;
+  color: #333333;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .fot_selected button {
   border: transparent;
